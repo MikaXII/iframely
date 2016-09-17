@@ -24,4 +24,5 @@ function entrypoint() {
     wait
 }
 
+envsubst < /iframely/config.local.js.tpl > /iframely/config.local.js 
 entrypoint

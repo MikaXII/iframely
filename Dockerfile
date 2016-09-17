@@ -8,7 +8,7 @@ WORKDIR /iframely
 
 RUN DEPS="libkrb5-dev" \
     apt-get update && \
-    apt-get install -q -y --no-install-recommends $DEPS && \
+    apt-get install -q -y --no-install-recommends $DEPS gettext && \
     npm install -g forever && \
     npm install && \
     apt-get purge -y --auto-remove $DEPS && \
